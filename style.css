@@ -1,0 +1,408 @@
+/* Me permite deslizar cuando hago clic en los links*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    padding: 20px 0;
+}
+
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 25%;
+}
+
+.links {
+    position: absolute;
+    top: 70px;
+    right: 22px;
+}
+
+.links li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+.links a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: rgb(201, 193, 147);
+}
+
+.inicio {
+    font-family: "Raleway", sans-serif;
+    background: #c9ffbe;
+    height: 600px;
+}
+
+
+.contenido-yo {
+    width: 35%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.redes {
+    color: white;
+}
+
+.contenido-banner {
+    background-color: white;
+    border: 5px solid black;
+    max-width: 35vw;
+    height: auto;
+    text-align: center;
+    border-radius: 40px;
+    position: absolute;
+    left: 31.5vw;
+    top: 310px;
+    line-height: 5px;
+}
+
+.contenido-banner h1 {
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.contenido-banner h2 {
+    font-size: 1vw;
+    font-family: "Kode Mono", monospace;
+    font-weight: lighter;
+}
+
+.sobre-mi {
+    line-height: 20px;
+}
+
+.redes a {
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+    transition: .3s;
+
+}
+
+.redes a:hover {
+    color: rgb(201, 193, 147);
+}
+
+.descargar {
+    min-width: 130px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #57cc99;
+    background: #57cc99;
+    margin: 2%;
+    text-decoration: none;
+  }
+
+  .css-button-rounded--green:hover {
+    background: #fff;
+    color: #57cc99
+  }
+
+
+.contenido-imagen {
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5%;
+}
+
+.contenido-imagen2 {
+    width: 25%;
+    margin-top: 20px;
+    position: absolute;
+    left: 73%;
+    border-radius: 5%;
+}
+
+/*CSS Skills */
+
+.skillsall {
+    background: white;
+    padding: 50px 20px;
+}
+
+.contenido-skills {
+    margin: auto;
+    font-family: "Raleway", sans-serif;
+}
+
+.contenido-skills h1 {
+    font-size: 3vw;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contenido-skills .fila {
+    margin: 0 6rem;
+    display: flex;
+}
+
+.contenido-skills .hskills {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.contenido-skills .skills > span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contenido-skills .skills .barra-skills {
+    height: 8px;
+    width: 80%;
+    background-color: #c9ffbe;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.contenido-skills .skills .barra-skills span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(201, 193, 147);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.contenido-skills .skills .progreso {
+    background-color: rgb(201, 193, 147);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.contenido-skills .skills .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.contenido-skills .skills .htmlcss {
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.contenido-skills .skills .git {
+    width: 0%;
+    animation: 2s git forwards;
+}
+
+@keyframes git {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.contenido-skills .skills .react {
+    width: 0%;
+    animation: 2s react forwards;
+}
+
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 35%;}
+}
+
+.contenido-skills .skills .trabajoenequipo {
+    width: 0%;
+    animation: 2s trabajoenequipo forwards;
+}
+
+@keyframes trabajoenequipo {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.contenido-skills .skills .rproblemas {
+    width: 0%;
+    animation: 2s rproblemas forwards;
+}
+
+@keyframes rproblemas {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.contenido-skills .skills .resiliencia {
+    width: 0%;
+    animation: 2s resiliencia forwards;
+}
+
+@keyframes resiliencia {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.contenido-skills .skills .responsabilidad {
+    width: 0%;
+    animation: 2s responsabilidad forwards;
+}
+
+@keyframes responsabilidad {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+/* CSS PORFOLIO */
+.porfolio {
+    background: black;
+    padding: 50px 20px;
+}
+
+.porfolio h1 {
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.fichas {
+    margin: 0 3.5rem;
+    display: flex;
+}
+
+.ficha {
+    border: 1px solid white;
+    width: 15em;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgb(184, 180, 180);
+	overflow: hidden;
+	margin: 2em;
+	text-align: center;
+	transition: all 0.25s;
+	background-color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+.ficha:hover {
+    transform: translateY(-3px);
+    box-shadow: 10px 15px 30px rgb(201, 193, 147);
+}
+
+.contenedorImagen {
+    width: 100%;
+    height: 8em;
+}
+
+.lenguajes {
+    font-size: 2.5em;
+    margin: 2%;
+}
+
+.lenguajes a {
+    border: 1px solid black;
+    border-radius: 20%;
+    padding: 0px 16px;
+    font-size: 80%;
+}
+
+.html5 {
+    color: orangered;
+}
+
+.css3 {
+    color: rgb(101, 101, 255);
+}
+
+.react {
+    color: rgb(40, 123, 247);
+}
+
+.ljavascript {
+    color: rgb(255, 215, 36);
+}
+
+.link a {
+    font-size: 1.5em;
+    color: black;
+    margin: 2%;
+}
+
+.link a:hover {
+    color: rgb(201, 193, 147);
+}
+
+/* CSS EDUCACION */
+.educacion {
+    background: #c9ffbe;
+    padding: 50px 20px;
+}
+
+/* CSS Móvil */
+@media(max-width: 600px)  {
+    .links {
+        position: absolute;
+        top: 20px;
+        right: -200px;
+    }
+
+    .links a {
+        text-transform: uppercase;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .logo img {
+        width: 5%;
+    }
+
+    .contenido-banner {
+        top: 150px;
+    }
+
+    .sobre-mi {
+        font-size: 1.5vw;
+        line-height: 15px;
+    }
+
+
+}
+
+
+
