@@ -477,11 +477,9 @@ header {
 }
 
 
-
-
 /* CSS EDUCACION */
 .educacion {
-    background: #c9ffbe;
+    background: white;
     padding: 50px 20px;
     
 }
@@ -493,7 +491,7 @@ header {
 }
 
 .educacion h3 {
-    color: black;
+    color: rgb(201, 193, 147);
 }
 
 .educacion button {
@@ -509,7 +507,7 @@ header {
     outline: none;
     border-radius: 5px;
     z-index: 0;
-    background: rgb(201, 193, 147);
+    background: white;
     overflow: hidden;
     border: 2px solid #212529;
     color: #212529;
@@ -533,7 +531,7 @@ header {
 }
 
 .contenido-educacion {
-    background: white;
+    background: #c9ffbe;
     font-family: "Kode Mono", monospace;
     border: 5px solid rgb(201, 193, 147);
     padding: 2rem 3rem;
@@ -543,36 +541,45 @@ header {
 }
 
 /* CSS contactame */
+.contacto {
+    background: rgb(201, 193, 147);
+    padding: 1% 2% 2% 2%;
+    text-align: center;
+}
 
 .contacto h1 {
     font-family: "Croissant One", serif;
     text-align: center;
     font-size: 2rem;
+    color: white;
 }
 
 .contenido-contacto{
     font-size: 1.2rem;
-    position: absolute;
-    left: 30%;
+
 }
 
 .contenido-contacto i {
-    padding: 2%;
+    padding: 1%;
 }
 
 .contenido-contacto p {
     font-weight: bold;
+    color: white;
 }
 
+.contenido-contacto .contactolink {
+    color: white;
+}
 .contenido-contacto a {
     font-weight: normal;
     text-decoration-line: underline;
-    color: black;
 }
 
 .contenido-contacto h3 {
     font-family: "Kode Mono", monospace;
-    width: 85%;
+    width: 100%;
+    color: white;
 }
 /* CSS Móvil */
 @media(max-width: 600px)  {
