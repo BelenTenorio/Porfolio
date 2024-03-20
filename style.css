@@ -48,7 +48,8 @@ header {
     background-image: url(imagenes/portada.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     height: 25em;
 }
 
