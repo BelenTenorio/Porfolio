@@ -14,13 +14,12 @@ header {
 
 
 .caja {
-    width: 940px;
     position: relative;
     margin: 0 auto;
 }
 
 .logo img {
-    width: 25%;
+    width: 20%;
 }
 
 .links {
@@ -46,33 +45,56 @@ header {
 }
 
 .inicio {
-    font-family: "Raleway", sans-serif;
-    background: #c9ffbe;
-    height: 600px;
+    background-image: url(imagenes/portada.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 25em;
 }
 
+.inicio2 {
+    padding: 2% 0 5%;
+    font-family: "Raleway", sans-serif;
+    background: #c9ffbe;
+}
+
+.titulo {
+    font-size: 3vw;
+    text-align: center;
+    font-family: "Croissant One", serif;
+}
 
 .contenido-yo {
-    width: 35%;
+    width: 25%;
     border-radius: 50%;
     margin-top: 20px;
+    position: absolute;
+    right: 71%;
+    bottom: 6rem;
 }
 
 .redes {
     color: white;
 }
 
+.contenido-texto {
+    position: relative;
+}
+
+.contenido-texto h3 {
+    font-size: 3%;
+}
+
 .contenido-banner {
     background-color: white;
     border: 5px solid black;
-    max-width: 35vw;
-    height: auto;
-    text-align: center;
+    width: 35vw;
+    text-align: right;
     border-radius: 40px;
-    position: absolute;
-    left: 31.5vw;
-    top: 310px;
     line-height: 5px;
+    position: relative;
+    left: 20%;
+    padding: 4rem 3rem 4rem 15rem;
 }
 
 .contenido-banner h1 {
@@ -87,7 +109,7 @@ header {
 }
 
 .sobre-mi {
-    line-height: 20px;
+    line-height: 2.5vw;
 }
 
 .redes a {
@@ -115,7 +137,6 @@ header {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
     display: inline-block;
     outline: none;
     border-radius: 5px;
@@ -123,6 +144,9 @@ header {
     background: #57cc99;
     margin: 2%;
     text-decoration: none;
+    position: relative;
+    right: 10rem;
+    top: 2rem;
   }
 
   .css-button-rounded--green:hover {
@@ -150,7 +174,7 @@ header {
 
 .skillsall {
     background: white;
-    padding: 50px 20px;
+    padding: 0 0 5%;
 }
 
 .contenido-skills {
@@ -159,6 +183,7 @@ header {
 }
 
 .contenido-skills h1 {
+    font-family: "Croissant One", serif;
     font-size: 3vw;
     text-align: center;
     padding: 20px 0;
@@ -291,7 +316,7 @@ header {
 /* CSS PORFOLIO */
 .porfolio {
     background: black;
-    padding: 50px 20px;
+    padding: 1% 2% 5% 2%;;
 }
 
 .porfolio h1 {
@@ -299,39 +324,12 @@ header {
     font-size: 3vw;
     text-align: center;
     padding: 20px 0;
-    font-family: "Raleway", sans-serif;
+    font-family: "Croissant One", serif;
 }
 
-.fichas {
-    margin: 0 3.5rem;
-    display: flex;
-}
-
-.ficha {
-    border: 1px solid white;
-    width: 15em;
-	border-radius: 10px;
-	box-shadow: 5px 5px 5px rgb(184, 180, 180);
-	overflow: hidden;
-	margin: 2em;
-	text-align: center;
-	transition: all 0.25s;
-	background-color: white;
-    font-family: "Raleway", sans-serif;
-}
-
-.ficha:hover {
-    transform: translateY(-3px);
-    box-shadow: 10px 15px 30px rgb(201, 193, 147);
-}
-
-.contenedorImagen {
-    width: 100%;
-    height: 8em;
-}
 
 .lenguajes {
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 2%;
 }
 
@@ -368,14 +366,219 @@ header {
     color: rgb(201, 193, 147);
 }
 
+/* CSS Slider */
+
+.container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 1%);
+    width: 80%;
+    height: 489px;
+    background: #f5f5f5;
+    border-radius: 10px;
+
+}
+
+.container .slide .item{
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.slide .item:nth-child(3){
+    left: 63%;
+    border: 3px solid white;
+    background-position: 50% 50%;
+}
+.slide .item:nth-child(4){
+    left: calc(60% + 19%);
+    border: 3px solid white;
+    background-position: 50% 50%;
+}
+
+/* here n = 0, 1, 2, 3,... */
+.slide .item:nth-child(n + 6){
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+.item .content{
+    position: absolute;
+    border: 2px solid #000;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 1% 3%;
+    top: 61%;
+    left: 50px;
+    width: 232px;
+    text-align: left;
+    color: black;
+    font-family: system-ui;
+    display: none;
+    background: white;
+}
+
+.slide .item:nth-child(2) .content{
+    display: block;
+}
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.button{
+    width: 100%;
+    text-align: center;
+    transform: translate(10px, 22px);
+}
+
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+}
+
+
+
+
 /* CSS EDUCACION */
 .educacion {
     background: #c9ffbe;
     padding: 50px 20px;
+    
 }
 
+.educacion h1 {
+    font-size: 3vw;
+    font-family: "Croissant One", serif;
+    text-align: center;
+}
+
+.educacion h3 {
+    color: black;
+}
+
+.educacion button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: rgb(201, 193, 147);
+    overflow: hidden;
+    border: 2px solid #212529;
+    color: #212529;
+}
+.educacion button:hover {
+    color: #fff;
+}
+.educacion button:hover:after {
+    width: 100%;
+}
+.educacion button:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #212529;
+}
+
+.contenido-educacion {
+    background: white;
+    font-family: "Kode Mono", monospace;
+    border: 5px solid rgb(201, 193, 147);
+    padding: 2rem 3rem;
+    width: 45%;
+    position: relative;
+    left: 23%;
+}
+
+/* CSS contactame */
+
+.contacto h1 {
+    font-family: "Croissant One", serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contenido-contacto{
+    font-size: 1.2rem;
+    position: absolute;
+    left: 30%;
+}
+
+.contenido-contacto i {
+    padding: 2%;
+}
+
+.contenido-contacto p {
+    font-weight: bold;
+}
+
+.contenido-contacto a {
+    font-weight: normal;
+    text-decoration-line: underline;
+    color: black;
+}
+
+.contenido-contacto h3 {
+    font-family: "Kode Mono", monospace;
+    width: 85%;
+}
 /* CSS Móvil */
 @media(max-width: 600px)  {
+    .ficha {
+        margin: 0.5em;
+    }
     .links {
         position: absolute;
         top: 20px;
@@ -393,16 +596,31 @@ header {
     }
 
     .contenido-banner {
-        top: 150px;
+        margin: auto;
+        position: static;
+    }
+
+    .contenido-banner h2 {
+        font-size: 0.5rem;
+    }
+
+    .contenido-texto h3 {
+        font-size: 1rem;
     }
 
     .sobre-mi {
-        font-size: 1.5vw;
-        line-height: 15px;
+        line-height: 1rem;
+        font-size: 1rem;
+    }
+    .contenido-yo {
+        position: absolute;
+        top: 95%;
+        width: 17%;
     }
 
-
 }
+
+
 
 
 
